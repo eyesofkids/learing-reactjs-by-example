@@ -1,0 +1,19 @@
+{
+  "presets": ["es2015", "react"],
+  "env": {
+    "development": {
+      "plugins": [
+        ["react-transform", {
+          "transforms": [{
+              "transform": "react-transform-hmr",
+              // 如果你使用React Native，這裡要改用"react-native"
+              "imports": ["react"],
+               // 對Webpack HMR是很重要的
+              "locals": ["module"]
+            }]
+            // 註: 你可以放更多transforms在陣列中
+        }]
+      ]
+    }
+  }
+}
