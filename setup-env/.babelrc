@@ -6,12 +6,12 @@
         ["react-transform", {
           "transforms": [{
               "transform": "react-transform-hmr",
-              // 如果你使用React Native，這裡要改用"react-native"
+              // if you use React Native, change to "react-native" here
               "imports": ["react"],
-               // 對Webpack HMR是很重要的
+               // it is important for Webpack HMR
               "locals": ["module"]
             }]
-            // 註: 你可以放更多transforms在陣列中
+            // Note: you can put other transforms in array
         }]
       ]
     }
